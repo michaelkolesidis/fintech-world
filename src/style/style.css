@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap");
+
+@font-face {
+  font-family: "Nickname";
+  src: url("../fonts/nickname.woff2");
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../fonts/sf_pro.woff2");
+}
+
+/***********/
+/* GENERAL */
+/***********/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  font-family: "SF Pro";
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  cursor: url("../cursors/arrow_cursor.svg"), auto;
+}
+
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.vignette {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 0 0 100px rgba(0, 0, 0, 0.9) inset; */
+  background: radial-gradient(transparent 90%, #034c9b44);
+}
+
+/******************/
+/* LOADING SCREEN */
+/******************/
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-image: linear-gradient(
+    to bottom,
+    #0486d4,
+    #009bd8,
+    #00acce,
+    #00bab8,
+    #16c69c
+  );
+}
+
+.loading-text {
+  font-family: Nickname, sans-serif;
+  margin: auto;
+  animation: loading 0.5s linear infinite;
+  background: #ffffff00;
+  font-size: 4em;
+  color: #ffffff;
+}
+
+@keyframes loading {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/**************/
+/* SKY      */
+/**************/
+.sky {
+  background: red;
+}
+
+/**************/
+/* LOGO       */
+/**************/
+.logo {
+  font-family: Nickname, sans-serif;
+  color: rgb(255, 255, 255);
+  background: #00000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  margin: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  line-height: 0.8em;
+  pointer-events: none;
+}
+
+.fintech {
+  font-family: Nickname, sans-serif;
+  font-size: 1.3em;
+}
+
+/*******************/
+/* CONTROL BUTTONS */
+/*******************/
+.control-buttons {
+  background: #00000000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  margin: 2.2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.control-button {
+  border: 3px solid #ffffff;
+  border-radius: 60px;
+  padding: 8px;
+  margin-left: 20px;
+  line-height: 10px;
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  transition: opacity 0.5s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+.control-button:hover {
+  opacity: 0.6;
+}
+
+/************************/
+/* PHONE THUMBNAIL AREA */
+/************************/
+.phone-thumbnail-area {
+  position: absolute;
+  bottom: -2em;
+  right: -5em;
+  z-index: 1;
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  scale: 0.95;
+}
+
+.phone-thumbnail {
+  z-index: 2;
+  width: 150px;
+  position: relative;
+  bottom: -5.6em;
+  right: -4em;
+  transform: rotateZ(6deg);
+  transition: transform 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+.phone-shadow {
+  width: 150px;
+  height: 15px;
+  position: relative;
+  bottom: -6em;
+  right: -4em;
+  z-index: 3;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #aeaeae 0%,
+    rgba(76, 76, 76, 0) 100%
+  );
+  transition: opacity 1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+.phone-thumbnail-area-background {
+  background-color: white;
+  width: 350px;
+  height: 150px;
+  border-radius: 50px;
+  transition: transform 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+  transform: rotateZ(-10deg);
+}
+
+.phone-thumbnail-area:hover .phone-thumbnail {
+  transition: transform 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+  transform: rotateZ(9deg) translateY(-10px);
+}
+
+.phone-thumbnail-area:hover .phone-shadow {
+  opacity: 0.4;
+}
+
+.phone-thumbnail-area:hover .phone-thumbnail-area-background {
+  transform: rotateZ(-15deg);
+}
+
+/******************/
+/* INSTRUCTIONS   */
+/******************/
+.instructions {
+  position: absolute;
+  width: 300px;
+  text-align: center;
+  bottom: 3vh;
+  left: 40%;
+  z-index: 2;
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #0486d4;
+  font-size: 16px;
+  animation: disappear 12s;
+  animation-iteration-count: 1;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/******************/
+/* ACTION BUTTON  */
+/******************/
+.action-button {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 12vh;
+  height: 12vh;
+  z-index: 1;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #ffffff;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+}
+
+.action-button:hover {
+  box-shadow: 0 0 40px #ffffff;
+}
+
+.button-icon {
+  z-index: 2;
+  width: 8vh;
+  transition: scale 1s 0.3s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+/******************/
+/* SPEECH BUBBLE  */
+/******************/
+.bubble {
+  height: 125px;
+  height: 12vh;
+  max-height: 125px;
+  width: 40%;
+  width: 40vw;
+  max-width: 400px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 0 auto; */
+  border-radius: 20px;
+  /* margin-top: 50px; */
+  font-size: 20px;
+  font-size: clamp(12px, 1.4vw, 20px);
+  text-align: center;
+  padding: 0 2vw;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 18px rgba(87, 87, 87, 0.759);
+}
+
+@keyframes flash {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.triangle {
+  position: relative;
+  font-size: 30px;
+  animation: flash 0.7s infinite;
+  position: relative;
+  left: calc(0.8vw);
+}
+
+.pointer {
+  height: 40px;
+  width: 40px;
+  background: #ffffff;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  border-radius: 0 0 12px 0;
+  margin-top: -22px;
+  position: relative;
+  left: calc(0.5vw);
+}
+
+/**********/
+/* PHONE  */
+/**********/
+.overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000066;
+}
+
+.hand {
+  width: min(120vw, 120vh);
+  position: absolute;
+  bottom: -10vh;
+  left: 0;
+  z-index: 2;
+}
+
+.closeButton {
+  z-index: 999;
+  width: min(12vw, 12vh);
+  position: absolute;
+  left: 4em;
+  left: min(83vw, 105vh);
+  top: 4em;
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  transition: transform 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+.closeButton:hover {
+  transform: rotateZ(90deg);
+}
+
+.screen {
+  width: min(31.6vw, 41.1vh);
+  height: 68.4vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    350deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(214, 253, 254, 1) 100%
+  );
+  z-index: 3;
+  position: absolute;
+  bottom: 16.5vh;
+  left: min(55vw, 56.9vh);
+  border-radius: max(2vw, 5vh);
+  box-shadow: 0 0 30px #ccc;
+}
+
+/**********/
+/* HOME   */
+/**********/
+.screen-row {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.phone-icon {
+  width: 200px;
+  width: min(11.5vw, 14vh);
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  transition: scale 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+}
+
+.phone-icon:hover {
+  scale: 1.1;
+}
+
+/*************/
+/* BROWSER   */
+/*************/
+.top-bar {
+  position: relative;
+  background-color: #e2e2e2;
+  width: 100%;
+  height: min(6vw, 9vh);
+  border-radius: max(2vw, 5vh) max(2vw, 5vh) 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-bar {
+  background-color: #f6f6f6;
+  font-size: min(1.9vw, 2.7vh);
+  padding: 0.5em 1.4em;
+  border-radius: 50px;
+}
+
+.secure-icon {
+  width: 15px;
+  margin-right: 0.7em;
+  margin-bottom: -0.025em;
+}
+
+/*************/
+/* APP       */
+/*************/
+.app {
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: max(2vw, 5vh);
+}
+
+.header {
+  font-family: "Nunito", sans-serif;
+  font-size: min(3.5vw, 4.5vh);
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0.04em;
+  font-weight: 900;
+  margin-bottom: min(1.9vw, 2.7vh);
+}
+
+.direct {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+
+.fullscreen-icon {
+  width: 55%;
+  margin-bottom: 1em;
+}
+
+.page-message {
+  font-size: 1.3em;
+  letter-spacing: 0.05em;
+}
+
+/*****************/
+/* AMOUNT PAGE   */
+/*****************/
+.form-text {
+  font-size: min(1.9vw, 2.7vh);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 1em 0 0.4em 0;
+}
+
+.form-field {
+  border: 3px solid #000000;
+  border-radius: 20px;
+  padding: min(1.5vw, 3vh) min(3vw, 6vh);
+  font-size: min(1.9vw, 2.7vh);
+  letter-spacing: 0.05em;
+  width: min(14vw, 13vh);
+  height: min(0.9vw, 1vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8em;
+}
+
+.form-button {
+  color: #ffffff;
+  background: #000000;
+  border-radius: 20px;
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  padding: min(1.5vw, 3vh) min(3vw, 6vh);
+  font-size: min(1.9vw, 2.7vh);
+  margin-top: min(1.9vw, 2.7vh);
+  letter-spacing: 0.05em;
+  width: min(14vw, 13vh);
+  height: min(0.9vw, 1vh);
+  transition: scale 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-button:hover {
+  scale: 1.1;
+}
+
+.coin-icon {
+  width: 30px;
+  margin-left: min(0.9vw, 1.7vh);
+}
+
+/******************/
+/* PAYMENT PAGE   */
+/******************/
+.payment-button {
+  width: min(20vw, 20vh);
+  margin: min(1vw, 1vh);
+  transition: scale 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
+  cursor: url("../cursors/hand_cursor.svg"), pointer;
+}
+
+.payment-button:hover {
+  scale: 1.1;
+}
