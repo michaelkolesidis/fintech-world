@@ -1,8 +1,8 @@
-![FINTECH WORLD Logo](./fintech_world_logo.png)
-
-![FINTECH WORLD Screenshot](./screenshots/fintech_world_screenshot.png)
+![FINTECH WORLD Logo](./fintech_world_logo_400.png)
 
 **FINTECH WORLD is an immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions offered by fintech companies, through a fun and engaging online experience.**
+
+![FINTECH WORLD Screenshot](./screenshots/fintech_world_screenshot.png)
 
 ## Information
 
