@@ -1,3 +1,5 @@
+**NOTE: The code included in this repository is an early prototype, differing substantially from the final product.**
+
 ![FINTECH WORLD Logo](./fintech_world_logo_400.png)
 
 **FINTECH WORLD is an immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions offered by fintech companies, through a fun and engaging online experience.**
