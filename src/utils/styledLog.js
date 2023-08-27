@@ -2,7 +2,7 @@ export default function styledLog(
   text,
   color = "rgb(0, 0, 0)",
   background,
-  size = "14px",
+  size = "12px",
   weight = "600"
 ) {
   // Style

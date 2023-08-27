@@ -10,14 +10,14 @@ import styledLog from "./utils/styledLog";
 
 // Console logs
 styledLog(
-  "Welcome to FINTECH WORLD!【ツ】",
+  "Welcome to Fintech World!",
   "rgb(0, 89, 195)",
   "rgb(255, 255, 255)",
-  "25px",
+  "22px",
   "600"
 );
 styledLog("© 2023 Michael Kolesidis. All rights reserved.");
-styledLog("INTERNAL USE ONLY - DO NOT SHARE LINK");
+styledLog("Licensed under the GNU AGPL");
 
 // Prevent right click
 document.addEventListener("contextmenu", (e) => e.preventDefault());
