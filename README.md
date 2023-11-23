@@ -2,6 +2,8 @@
 
 _Fintech World_ is an immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions offered by fintech companies, through a fun and engaging online experience.
 
+<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 ![Fintech World Screenshot](./screenshots/fintech_world_screenshot.png)
 
 ## Information
@@ -50,6 +52,12 @@ All the assets used in _Fintech World_ (3D models, textures, images, sound effec
 ## Acknowledgements
 
 Thanks to [Hugo Wiledal](https://twitter.com/etthugo) for [this](https://codesandbox.io/s/trip-fellas-9d4vm9). Thanks to the amazing team at [Merci-Michel](https://www.merci-michel.com/), their work is outstanding and they have been a constant [source of inspiration](https://coastalworld.com/).
+
+## 💖 Support the Project
+
+Thank you so much for your interest in my project! If you want to go a step further and support my work, buy me a coffee:
+
+<a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ## License
 
