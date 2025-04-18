@@ -53,7 +53,7 @@ export const useCharacterState = () =>
 //==========================
 // Character Controller
 //==========================
-export const useCharacterController = (bodyRef, { maxSpeed = 0.05 }) => {
+export const useCharacterController = (bodyRef, { maxSpeed = 0.06 }) => {
   const setPosition = useGame((state) => state.setPosition);
 
   const rapier = useRapier();
@@ -144,6 +144,110 @@ export const useCharacterController = (bodyRef, { maxSpeed = 0.05 }) => {
 
   return characterState;
 };
+
+// export const useCharacterController = (bodyRef, { maxSpeed = 0.15 }) => {
+//   const setPosition = useGame((state) => state.setPosition);
+//   const rapier = useRapier();
+//   const { camera } = useThree();
+//   const keysdown = useKeyboard();
+//   const characterState = useCharacterState();
+
+//   // Add new state
+//   characterState.currentSpeed = 0;
+//   characterState.lastDirection = { x: 0, z: 0 };
+
+//   useEffect(() => {
+//     camera.near = 0.01;
+//     camera.far = 100;
+//   }, []);
+
+//   const lastTick = useRef(0);
+
+//   useBeforePhysicsStep(() => {
+//     const body = bodyRef.current;
+//     const now = performance.now();
+//     const delta = (now - lastTick.current) / 1000;
+//     lastTick.current = now;
+
+//     if (body) {
+//       const linvel = vec3(body.linvel());
+//       const movement = vec3();
+//       const translation = vec3(body.translation());
+
+//       // Input direction
+//       let input = { x: 0, z: 0 };
+
+//       if (keysdown.current.ArrowUp || keysdown.current.KeyW) input.z -= 1;
+//       if (keysdown.current.ArrowDown || keysdown.current.KeyS) input.z += 1;
+//       if (keysdown.current.ArrowLeft || keysdown.current.KeyA) input.x -= 1;
+//       if (keysdown.current.ArrowRight || keysdown.current.KeyD) input.x += 1;
+
+//       const isMoving = input.x !== 0 || input.z !== 0;
+
+//       // Normalize direction
+//       const inputLength = Math.hypot(input.x, input.z);
+//       if (inputLength > 0) {
+//         input.x /= inputLength;
+//         input.z /= inputLength;
+//       }
+
+//       // Check for direction change
+//       const directionChanged =
+//         input.x !== characterState.lastDirection.x ||
+//         input.z !== characterState.lastDirection.z;
+
+//       if (directionChanged && isMoving) {
+//         characterState.currentSpeed *= 0.3; // Slow down sharply on turn
+//         characterState.lastDirection = { ...input };
+//       }
+
+//       // Ease in/out
+//       const accelerationRate = 1.5;
+//       const decelerationRate = 2.0;
+
+//       if (isMoving) {
+//         characterState.currentSpeed = THREE.MathUtils.lerp(
+//           characterState.currentSpeed,
+//           maxSpeed,
+//           delta * accelerationRate
+//         );
+//       } else {
+//         characterState.currentSpeed = THREE.MathUtils.lerp(
+//           characterState.currentSpeed,
+//           0,
+//           delta * decelerationRate
+//         );
+//       }
+
+//       if (characterState.currentSpeed < 0.001) {
+//         characterState.currentSpeed = 0;
+//       }
+
+//       // Apply movement
+//       movement.x = input.x * characterState.currentSpeed;
+//       movement.z = input.z * characterState.currentSpeed;
+
+//       const mult = delta / (1 / 60);
+//       movement.multiply({ x: mult, y: mult, z: mult });
+
+//       const finalTranslation = translation.add(movement);
+//       body.setTranslation(finalTranslation, true);
+
+//       characterState.velocity = movement;
+//       characterState.moving = characterState.velocity.length() > 0.01;
+
+//       if (isMoving) {
+//         setPosition(
+//           body.translation().x,
+//           body.translation().y,
+//           body.translation().z
+//         );
+//       }
+//     }
+//   });
+
+//   return characterState;
+// };
 
 //==========================
 // Character Model Component
