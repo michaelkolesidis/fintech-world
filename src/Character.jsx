@@ -1,8 +1,8 @@
-import React, { useEffect, useMemo, useRef } from "react";
-import { useFrame, useGraph, useThree } from "@react-three/fiber";
-import { Capsule, useGLTF, useAnimations } from "@react-three/drei";
-import { SkeletonUtils } from "three-stdlib";
-import * as THREE from "three";
+import React, { useEffect, useMemo, useRef } from 'react';
+import { useFrame, useGraph, useThree } from '@react-three/fiber';
+import { Capsule, useGLTF, useAnimations } from '@react-three/drei';
+import { SkeletonUtils } from 'three-stdlib';
+import * as THREE from 'three';
 import {
   CapsuleCollider,
   RigidBody,
@@ -10,8 +10,8 @@ import {
   useBeforePhysicsStep,
   useRapier,
   vec3,
-} from "@react-three/rapier";
-import useGame from "./stores/useGame.js";
+} from '@react-three/rapier';
+import useGame from './stores/useGame.js';
 
 //==========================
 // Keyboard input handling
@@ -27,12 +27,12 @@ export const useKeyboard = () => {
       keysDown.current[event.code] = false;
     };
 
-    window.addEventListener("keydown", handleKeyDown);
-    window.addEventListener("keyup", handleKeyUp);
+    window.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keyup', handleKeyUp);
 
     return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-      window.removeEventListener("keyup", handleKeyUp);
+      window.removeEventListener('keydown', handleKeyDown);
+      window.removeEventListener('keyup', handleKeyUp);
     };
   }, []);
 
@@ -92,7 +92,6 @@ export const useCharacterController = (bodyRef, { maxSpeed = 0.05 }) => {
           body.translation().y,
           body.translation().z
         );
-
       }
       // Move DOWN
       if (
@@ -151,7 +150,7 @@ export const useCharacterController = (bodyRef, { maxSpeed = 0.05 }) => {
 //==========================
 export const CharacterModel = ({ characterState, ...props }) => {
   const group = useRef();
-  const { materials, animations, scene } = useGLTF("/character.glb");
+  const { materials, animations, scene } = useGLTF('/character.glb');
   // Skinned meshes cannot be re-used in threejs without cloning them
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene]);
   // useGraph creates two flat object collections for nodes and materials
@@ -159,13 +158,13 @@ export const CharacterModel = ({ characterState, ...props }) => {
 
   const { actions } = useAnimations(animations, group);
   const animState = useRef({
-    currentAnimation: "",
+    currentAnimation: '',
     direction: null,
   });
 
   useFrame((state, delta) => {
     const { currentAnimation } = animState.current;
-    let animation = characterState.moving ? "run" : "idle";
+    let animation = characterState.moving ? 'run' : 'idle';
 
     if (currentAnimation !== animation) {
       actions[currentAnimation]?.fadeOut(0.1);
@@ -194,7 +193,7 @@ export const CharacterModel = ({ characterState, ...props }) => {
         <skinnedMesh
           name="body"
           geometry={nodes.body.geometry}
-          material={materials["Material.001"]}
+          material={materials['Material.001']}
           skeleton={nodes.body.skeleton}
           castShadow
         />
@@ -221,7 +220,7 @@ export const CharacterModel = ({ characterState, ...props }) => {
   );
 };
 
-useGLTF.preload("/character.glb");
+useGLTF.preload('/character.glb');
 
 //==========================
 // Character Component

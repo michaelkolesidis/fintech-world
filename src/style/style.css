@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
 
 @font-face {
-  font-family: "Nickname";
-  src: url("../fonts/nickname.woff2");
+  font-family: 'Nickname';
+  src: url('../fonts/nickname.woff2');
 }
 
 @font-face {
-  font-family: "SF Pro";
-  src: url("../fonts/sf_pro.woff2");
+  font-family: 'SF Pro';
+  src: url('../fonts/sf_pro.woff2');
 }
 
 /***********/
@@ -20,7 +20,7 @@
   user-select: none;
   -webkit-user-drag: none;
   -moz-user-drag: none;
-  font-family: "SF Pro";
+  font-family: 'SF Pro';
 }
 
 html,
@@ -28,7 +28,7 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  cursor: url("../cursors/arrow_cursor.svg"), auto;
+  cursor: url('../cursors/arrow_cursor.svg'), auto;
 }
 
 #root {
@@ -137,7 +137,7 @@ body,
   padding: 8px;
   margin-left: 20px;
   line-height: 10px;
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
   transition: opacity 0.5s cubic-bezier(0.19, 1.51, 0.29, 0.99);
 }
 
@@ -153,7 +153,7 @@ body,
   bottom: -2em;
   right: -5em;
   z-index: 1;
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
   scale: 0.95;
 }
 
@@ -257,7 +257,7 @@ body,
   align-items: center;
   box-shadow: 0 0 10px #ffffff;
   transition: box-shadow 0.3s ease-in-out;
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
 }
 
 .action-button:hover {
@@ -356,7 +356,7 @@ body,
   left: 4em;
   left: min(83vw, 105vh);
   top: 4em;
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
   transition: transform 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
 }
 
@@ -393,7 +393,7 @@ body,
 .phone-icon {
   width: 200px;
   width: min(11.5vw, 14vh);
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
   transition: scale 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
 }
 
@@ -438,7 +438,7 @@ body,
 }
 
 .header {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: min(3.5vw, 4.5vh);
   color: #000000;
   text-align: center;
@@ -448,7 +448,7 @@ body,
 }
 
 .direct {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
 }
 
@@ -498,7 +498,7 @@ body,
   color: #ffffff;
   background: #000000;
   border-radius: 20px;
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
   padding: min(1.5vw, 3vh) min(3vw, 6vh);
   font-size: min(1.9vw, 2.7vh);
   margin-top: min(1.9vw, 2.7vh);
@@ -527,7 +527,7 @@ body,
   width: min(20vw, 20vh);
   margin: min(1vw, 1vh);
   transition: scale 1s 0.1s cubic-bezier(0.19, 1.51, 0.29, 0.99);
-  cursor: url("../cursors/hand_cursor.svg"), pointer;
+  cursor: url('../cursors/hand_cursor.svg'), pointer;
 }
 
 .payment-button:hover {

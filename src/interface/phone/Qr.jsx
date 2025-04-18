@@ -1,6 +1,6 @@
-import Browser from "./Browser";
-import Header from "./Header";
-import scanQrIcon from "./icons/scan_qr.png";
+import Browser from './Browser';
+import Header from './Header';
+import scanQrIcon from './icons/scan_qr.png';
 
 export default function Qr() {
   return (

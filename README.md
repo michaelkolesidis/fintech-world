@@ -2,7 +2,7 @@
 
 _Fintech World_ is an immersive 3D gamification web platform that promotes, educates, and informs visitors about digital payment solutions offered by fintech companies, through a fun and engaging online experience.
 
-![Fintech World Screenshot](./screenshots/fintech_world_screenshot.png)
+![Fintech World Screenshot](./screenshots/welcome.png)
 
 <a href='https://ko-fi.com/michaelkolesidis' target='_blank'><img src='https://cdn.ko-fi.com/cdn/kofi1.png' style='border:0px;height:45px;' alt='Buy Me a Coffee at ko-fi.com' /></a>
 

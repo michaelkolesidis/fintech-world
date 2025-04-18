@@ -1,8 +1,8 @@
-import React from "react";
-import { useGLTF } from "@react-three/drei";
+import React from 'react';
+import { useGLTF } from '@react-three/drei';
 
 export function World() {
-  const { nodes, materials } = useGLTF("/world.glb");
+  const { nodes, materials } = useGLTF('/world.glb');
   return (
     <group dispose={null}>
       <group
@@ -64,14 +64,14 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Sign12_1.geometry}
-          material={materials["Light Wood"]}
+          material={materials['Light Wood']}
         />
         <mesh
           name="Sign12_2"
           castShadow
           receiveShadow
           geometry={nodes.Sign12_2.geometry}
-          material={materials["Dark Wood"]}
+          material={materials['Dark Wood']}
         />
         <mesh
           name="Sign12_3"
@@ -97,21 +97,21 @@ export function World() {
           name="palm_tree_01-Mesh"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh"].geometry}
-          material={materials["795548"]}
+          geometry={nodes['palm_tree_01-Mesh'].geometry}
+          material={materials['795548']}
         />
         <mesh
           name="palm_tree_01-Mesh_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh_1"].geometry}
-          material={materials["8BC34A"]}
+          geometry={nodes['palm_tree_01-Mesh_1'].geometry}
+          material={materials['8BC34A']}
         />
         <mesh
           name="palm_tree_01-Mesh_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh_2"].geometry}
+          geometry={nodes['palm_tree_01-Mesh_2'].geometry}
           material={materials.DD9944}
         />
       </group>
@@ -125,22 +125,22 @@ export function World() {
           name="palm_tree_01-Mesh001"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh001"].geometry}
-          material={materials["795548.001"]}
+          geometry={nodes['palm_tree_01-Mesh001'].geometry}
+          material={materials['795548.001']}
         />
         <mesh
           name="palm_tree_01-Mesh001_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh001_1"].geometry}
-          material={materials["8BC34A.001"]}
+          geometry={nodes['palm_tree_01-Mesh001_1'].geometry}
+          material={materials['8BC34A.001']}
         />
         <mesh
           name="palm_tree_01-Mesh001_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh001_2"].geometry}
-          material={materials["DD9944.001"]}
+          geometry={nodes['palm_tree_01-Mesh001_2'].geometry}
+          material={materials['DD9944.001']}
         />
       </group>
       <group
@@ -153,22 +153,22 @@ export function World() {
           name="palm_tree_01-Mesh002"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh002"].geometry}
-          material={materials["795548.002"]}
+          geometry={nodes['palm_tree_01-Mesh002'].geometry}
+          material={materials['795548.002']}
         />
         <mesh
           name="palm_tree_01-Mesh002_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh002_1"].geometry}
-          material={materials["8BC34A.002"]}
+          geometry={nodes['palm_tree_01-Mesh002_1'].geometry}
+          material={materials['8BC34A.002']}
         />
         <mesh
           name="palm_tree_01-Mesh002_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh002_2"].geometry}
-          material={materials["DD9944.002"]}
+          geometry={nodes['palm_tree_01-Mesh002_2'].geometry}
+          material={materials['DD9944.002']}
         />
       </group>
       <group
@@ -181,22 +181,22 @@ export function World() {
           name="palm_tree_01-Mesh003"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh003"].geometry}
-          material={materials["795548.003"]}
+          geometry={nodes['palm_tree_01-Mesh003'].geometry}
+          material={materials['795548.003']}
         />
         <mesh
           name="palm_tree_01-Mesh003_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh003_1"].geometry}
-          material={materials["8BC34A.003"]}
+          geometry={nodes['palm_tree_01-Mesh003_1'].geometry}
+          material={materials['8BC34A.003']}
         />
         <mesh
           name="palm_tree_01-Mesh003_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh003_2"].geometry}
-          material={materials["DD9944.003"]}
+          geometry={nodes['palm_tree_01-Mesh003_2'].geometry}
+          material={materials['DD9944.003']}
         />
       </group>
       <group
@@ -209,22 +209,22 @@ export function World() {
           name="palm_tree_01-Mesh004"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh004"].geometry}
-          material={materials["795548.004"]}
+          geometry={nodes['palm_tree_01-Mesh004'].geometry}
+          material={materials['795548.004']}
         />
         <mesh
           name="palm_tree_01-Mesh004_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh004_1"].geometry}
-          material={materials["8BC34A.004"]}
+          geometry={nodes['palm_tree_01-Mesh004_1'].geometry}
+          material={materials['8BC34A.004']}
         />
         <mesh
           name="palm_tree_01-Mesh004_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh004_2"].geometry}
-          material={materials["DD9944.004"]}
+          geometry={nodes['palm_tree_01-Mesh004_2'].geometry}
+          material={materials['DD9944.004']}
         />
       </group>
       <group
@@ -237,22 +237,22 @@ export function World() {
           name="palm_tree_01-Mesh005"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh005"].geometry}
-          material={materials["795548.005"]}
+          geometry={nodes['palm_tree_01-Mesh005'].geometry}
+          material={materials['795548.005']}
         />
         <mesh
           name="palm_tree_01-Mesh005_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh005_1"].geometry}
-          material={materials["8BC34A.005"]}
+          geometry={nodes['palm_tree_01-Mesh005_1'].geometry}
+          material={materials['8BC34A.005']}
         />
         <mesh
           name="palm_tree_01-Mesh005_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh005_2"].geometry}
-          material={materials["DD9944.005"]}
+          geometry={nodes['palm_tree_01-Mesh005_2'].geometry}
+          material={materials['DD9944.005']}
         />
       </group>
       <group
@@ -264,22 +264,22 @@ export function World() {
           name="palm_tree_01-Mesh006"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh006"].geometry}
-          material={materials["795548.006"]}
+          geometry={nodes['palm_tree_01-Mesh006'].geometry}
+          material={materials['795548.006']}
         />
         <mesh
           name="palm_tree_01-Mesh006_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh006_1"].geometry}
-          material={materials["8BC34A.006"]}
+          geometry={nodes['palm_tree_01-Mesh006_1'].geometry}
+          material={materials['8BC34A.006']}
         />
         <mesh
           name="palm_tree_01-Mesh006_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh006_2"].geometry}
-          material={materials["DD9944.006"]}
+          geometry={nodes['palm_tree_01-Mesh006_2'].geometry}
+          material={materials['DD9944.006']}
         />
       </group>
       <group
@@ -292,22 +292,22 @@ export function World() {
           name="palm_tree_01-Mesh007"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh007"].geometry}
-          material={materials["795548.007"]}
+          geometry={nodes['palm_tree_01-Mesh007'].geometry}
+          material={materials['795548.007']}
         />
         <mesh
           name="palm_tree_01-Mesh007_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh007_1"].geometry}
-          material={materials["8BC34A.007"]}
+          geometry={nodes['palm_tree_01-Mesh007_1'].geometry}
+          material={materials['8BC34A.007']}
         />
         <mesh
           name="palm_tree_01-Mesh007_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh007_2"].geometry}
-          material={materials["DD9944.007"]}
+          geometry={nodes['palm_tree_01-Mesh007_2'].geometry}
+          material={materials['DD9944.007']}
         />
       </group>
       <group
@@ -319,22 +319,22 @@ export function World() {
           name="palm_tree_01-Mesh008"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh008"].geometry}
-          material={materials["795548.008"]}
+          geometry={nodes['palm_tree_01-Mesh008'].geometry}
+          material={materials['795548.008']}
         />
         <mesh
           name="palm_tree_01-Mesh008_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh008_1"].geometry}
-          material={materials["8BC34A.008"]}
+          geometry={nodes['palm_tree_01-Mesh008_1'].geometry}
+          material={materials['8BC34A.008']}
         />
         <mesh
           name="palm_tree_01-Mesh008_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh008_2"].geometry}
-          material={materials["DD9944.008"]}
+          geometry={nodes['palm_tree_01-Mesh008_2'].geometry}
+          material={materials['DD9944.008']}
         />
       </group>
       <group
@@ -347,22 +347,22 @@ export function World() {
           name="palm_tree_01-Mesh009"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh009"].geometry}
-          material={materials["795548.009"]}
+          geometry={nodes['palm_tree_01-Mesh009'].geometry}
+          material={materials['795548.009']}
         />
         <mesh
           name="palm_tree_01-Mesh009_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh009_1"].geometry}
-          material={materials["8BC34A.009"]}
+          geometry={nodes['palm_tree_01-Mesh009_1'].geometry}
+          material={materials['8BC34A.009']}
         />
         <mesh
           name="palm_tree_01-Mesh009_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh009_2"].geometry}
-          material={materials["DD9944.009"]}
+          geometry={nodes['palm_tree_01-Mesh009_2'].geometry}
+          material={materials['DD9944.009']}
         />
       </group>
       <group
@@ -375,22 +375,22 @@ export function World() {
           name="palm_tree_01-Mesh010"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh010"].geometry}
-          material={materials["795548.010"]}
+          geometry={nodes['palm_tree_01-Mesh010'].geometry}
+          material={materials['795548.010']}
         />
         <mesh
           name="palm_tree_01-Mesh010_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh010_1"].geometry}
-          material={materials["8BC34A.010"]}
+          geometry={nodes['palm_tree_01-Mesh010_1'].geometry}
+          material={materials['8BC34A.010']}
         />
         <mesh
           name="palm_tree_01-Mesh010_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh010_2"].geometry}
-          material={materials["DD9944.010"]}
+          geometry={nodes['palm_tree_01-Mesh010_2'].geometry}
+          material={materials['DD9944.010']}
         />
       </group>
       <group
@@ -403,22 +403,22 @@ export function World() {
           name="palm_tree_01-Mesh011"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh011"].geometry}
-          material={materials["795548.011"]}
+          geometry={nodes['palm_tree_01-Mesh011'].geometry}
+          material={materials['795548.011']}
         />
         <mesh
           name="palm_tree_01-Mesh011_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh011_1"].geometry}
-          material={materials["8BC34A.011"]}
+          geometry={nodes['palm_tree_01-Mesh011_1'].geometry}
+          material={materials['8BC34A.011']}
         />
         <mesh
           name="palm_tree_01-Mesh011_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh011_2"].geometry}
-          material={materials["DD9944.011"]}
+          geometry={nodes['palm_tree_01-Mesh011_2'].geometry}
+          material={materials['DD9944.011']}
         />
       </group>
       <group
@@ -431,22 +431,22 @@ export function World() {
           name="palm_tree_01-Mesh012"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh012"].geometry}
-          material={materials["795548.012"]}
+          geometry={nodes['palm_tree_01-Mesh012'].geometry}
+          material={materials['795548.012']}
         />
         <mesh
           name="palm_tree_01-Mesh012_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh012_1"].geometry}
-          material={materials["8BC34A.012"]}
+          geometry={nodes['palm_tree_01-Mesh012_1'].geometry}
+          material={materials['8BC34A.012']}
         />
         <mesh
           name="palm_tree_01-Mesh012_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh012_2"].geometry}
-          material={materials["DD9944.012"]}
+          geometry={nodes['palm_tree_01-Mesh012_2'].geometry}
+          material={materials['DD9944.012']}
         />
       </group>
       <group
@@ -459,22 +459,22 @@ export function World() {
           name="palm_tree_01-Mesh013"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh013"].geometry}
-          material={materials["795548.013"]}
+          geometry={nodes['palm_tree_01-Mesh013'].geometry}
+          material={materials['795548.013']}
         />
         <mesh
           name="palm_tree_01-Mesh013_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh013_1"].geometry}
-          material={materials["8BC34A.013"]}
+          geometry={nodes['palm_tree_01-Mesh013_1'].geometry}
+          material={materials['8BC34A.013']}
         />
         <mesh
           name="palm_tree_01-Mesh013_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh013_2"].geometry}
-          material={materials["DD9944.013"]}
+          geometry={nodes['palm_tree_01-Mesh013_2'].geometry}
+          material={materials['DD9944.013']}
         />
       </group>
       <group
@@ -487,22 +487,22 @@ export function World() {
           name="palm_tree_01-Mesh014"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh014"].geometry}
-          material={materials["795548.014"]}
+          geometry={nodes['palm_tree_01-Mesh014'].geometry}
+          material={materials['795548.014']}
         />
         <mesh
           name="palm_tree_01-Mesh014_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh014_1"].geometry}
-          material={materials["8BC34A.014"]}
+          geometry={nodes['palm_tree_01-Mesh014_1'].geometry}
+          material={materials['8BC34A.014']}
         />
         <mesh
           name="palm_tree_01-Mesh014_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh014_2"].geometry}
-          material={materials["DD9944.014"]}
+          geometry={nodes['palm_tree_01-Mesh014_2'].geometry}
+          material={materials['DD9944.014']}
         />
       </group>
       <group
@@ -515,22 +515,22 @@ export function World() {
           name="palm_tree_01-Mesh015"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh015"].geometry}
-          material={materials["795548.015"]}
+          geometry={nodes['palm_tree_01-Mesh015'].geometry}
+          material={materials['795548.015']}
         />
         <mesh
           name="palm_tree_01-Mesh015_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh015_1"].geometry}
-          material={materials["8BC34A.015"]}
+          geometry={nodes['palm_tree_01-Mesh015_1'].geometry}
+          material={materials['8BC34A.015']}
         />
         <mesh
           name="palm_tree_01-Mesh015_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh015_2"].geometry}
-          material={materials["DD9944.015"]}
+          geometry={nodes['palm_tree_01-Mesh015_2'].geometry}
+          material={materials['DD9944.015']}
         />
       </group>
       <group name="SM_HutSM_Hut" position={[17.81, -1.39, 34.66]} scale={0.65}>
@@ -553,7 +553,7 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1_2.geometry}
-          material={materials["lambert3SG.001"]}
+          material={materials['lambert3SG.001']}
         />
       </group>
       <group
@@ -567,21 +567,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1001.geometry}
-          material={materials["lambert2SG.001"]}
+          material={materials['lambert2SG.001']}
         />
         <mesh
           name="SM_HutSM_Hut_1001_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1001_1.geometry}
-          material={materials["lambert4SG.001"]}
+          material={materials['lambert4SG.001']}
         />
         <mesh
           name="SM_HutSM_Hut_1001_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1001_2.geometry}
-          material={materials["lambert3SG.002"]}
+          material={materials['lambert3SG.002']}
         />
       </group>
       <group
@@ -595,21 +595,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1002.geometry}
-          material={materials["lambert2SG.002"]}
+          material={materials['lambert2SG.002']}
         />
         <mesh
           name="SM_HutSM_Hut_1002_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1002_1.geometry}
-          material={materials["lambert4SG.002"]}
+          material={materials['lambert4SG.002']}
         />
         <mesh
           name="SM_HutSM_Hut_1002_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1002_2.geometry}
-          material={materials["lambert3SG.003"]}
+          material={materials['lambert3SG.003']}
         />
       </group>
       <group
@@ -623,21 +623,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1003.geometry}
-          material={materials["lambert2SG.003"]}
+          material={materials['lambert2SG.003']}
         />
         <mesh
           name="SM_HutSM_Hut_1003_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1003_1.geometry}
-          material={materials["lambert4SG.003"]}
+          material={materials['lambert4SG.003']}
         />
         <mesh
           name="SM_HutSM_Hut_1003_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1003_2.geometry}
-          material={materials["lambert3SG.004"]}
+          material={materials['lambert3SG.004']}
         />
       </group>
       <group
@@ -650,22 +650,22 @@ export function World() {
           name="palm_tree_01-Mesh016"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh016"].geometry}
-          material={materials["795548.016"]}
+          geometry={nodes['palm_tree_01-Mesh016'].geometry}
+          material={materials['795548.016']}
         />
         <mesh
           name="palm_tree_01-Mesh016_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh016_1"].geometry}
-          material={materials["8BC34A.016"]}
+          geometry={nodes['palm_tree_01-Mesh016_1'].geometry}
+          material={materials['8BC34A.016']}
         />
         <mesh
           name="palm_tree_01-Mesh016_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh016_2"].geometry}
-          material={materials["DD9944.016"]}
+          geometry={nodes['palm_tree_01-Mesh016_2'].geometry}
+          material={materials['DD9944.016']}
         />
       </group>
       <group
@@ -678,22 +678,22 @@ export function World() {
           name="palm_tree_01-Mesh017"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh017"].geometry}
-          material={materials["795548.017"]}
+          geometry={nodes['palm_tree_01-Mesh017'].geometry}
+          material={materials['795548.017']}
         />
         <mesh
           name="palm_tree_01-Mesh017_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh017_1"].geometry}
-          material={materials["8BC34A.017"]}
+          geometry={nodes['palm_tree_01-Mesh017_1'].geometry}
+          material={materials['8BC34A.017']}
         />
         <mesh
           name="palm_tree_01-Mesh017_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh017_2"].geometry}
-          material={materials["DD9944.017"]}
+          geometry={nodes['palm_tree_01-Mesh017_2'].geometry}
+          material={materials['DD9944.017']}
         />
       </group>
       <group
@@ -706,22 +706,22 @@ export function World() {
           name="palm_tree_01-Mesh018"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh018"].geometry}
-          material={materials["795548.018"]}
+          geometry={nodes['palm_tree_01-Mesh018'].geometry}
+          material={materials['795548.018']}
         />
         <mesh
           name="palm_tree_01-Mesh018_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh018_1"].geometry}
-          material={materials["8BC34A.018"]}
+          geometry={nodes['palm_tree_01-Mesh018_1'].geometry}
+          material={materials['8BC34A.018']}
         />
         <mesh
           name="palm_tree_01-Mesh018_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh018_2"].geometry}
-          material={materials["DD9944.018"]}
+          geometry={nodes['palm_tree_01-Mesh018_2'].geometry}
+          material={materials['DD9944.018']}
         />
       </group>
       <group
@@ -734,22 +734,22 @@ export function World() {
           name="palm_tree_01-Mesh019"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh019"].geometry}
-          material={materials["795548.019"]}
+          geometry={nodes['palm_tree_01-Mesh019'].geometry}
+          material={materials['795548.019']}
         />
         <mesh
           name="palm_tree_01-Mesh019_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh019_1"].geometry}
-          material={materials["8BC34A.019"]}
+          geometry={nodes['palm_tree_01-Mesh019_1'].geometry}
+          material={materials['8BC34A.019']}
         />
         <mesh
           name="palm_tree_01-Mesh019_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh019_2"].geometry}
-          material={materials["DD9944.019"]}
+          geometry={nodes['palm_tree_01-Mesh019_2'].geometry}
+          material={materials['DD9944.019']}
         />
       </group>
       <group
@@ -762,22 +762,22 @@ export function World() {
           name="palm_tree_01-Mesh020"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh020"].geometry}
-          material={materials["795548.020"]}
+          geometry={nodes['palm_tree_01-Mesh020'].geometry}
+          material={materials['795548.020']}
         />
         <mesh
           name="palm_tree_01-Mesh020_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh020_1"].geometry}
-          material={materials["8BC34A.020"]}
+          geometry={nodes['palm_tree_01-Mesh020_1'].geometry}
+          material={materials['8BC34A.020']}
         />
         <mesh
           name="palm_tree_01-Mesh020_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh020_2"].geometry}
-          material={materials["DD9944.020"]}
+          geometry={nodes['palm_tree_01-Mesh020_2'].geometry}
+          material={materials['DD9944.020']}
         />
       </group>
       <group
@@ -790,22 +790,22 @@ export function World() {
           name="palm_tree_01-Mesh021"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh021"].geometry}
-          material={materials["795548.021"]}
+          geometry={nodes['palm_tree_01-Mesh021'].geometry}
+          material={materials['795548.021']}
         />
         <mesh
           name="palm_tree_01-Mesh021_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh021_1"].geometry}
-          material={materials["8BC34A.021"]}
+          geometry={nodes['palm_tree_01-Mesh021_1'].geometry}
+          material={materials['8BC34A.021']}
         />
         <mesh
           name="palm_tree_01-Mesh021_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh021_2"].geometry}
-          material={materials["DD9944.021"]}
+          geometry={nodes['palm_tree_01-Mesh021_2'].geometry}
+          material={materials['DD9944.021']}
         />
       </group>
       <group
@@ -818,22 +818,22 @@ export function World() {
           name="palm_tree_01-Mesh022"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh022"].geometry}
-          material={materials["795548.022"]}
+          geometry={nodes['palm_tree_01-Mesh022'].geometry}
+          material={materials['795548.022']}
         />
         <mesh
           name="palm_tree_01-Mesh022_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh022_1"].geometry}
-          material={materials["8BC34A.022"]}
+          geometry={nodes['palm_tree_01-Mesh022_1'].geometry}
+          material={materials['8BC34A.022']}
         />
         <mesh
           name="palm_tree_01-Mesh022_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh022_2"].geometry}
-          material={materials["DD9944.022"]}
+          geometry={nodes['palm_tree_01-Mesh022_2'].geometry}
+          material={materials['DD9944.022']}
         />
       </group>
       <group
@@ -846,22 +846,22 @@ export function World() {
           name="palm_tree_01-Mesh023"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh023"].geometry}
-          material={materials["795548.023"]}
+          geometry={nodes['palm_tree_01-Mesh023'].geometry}
+          material={materials['795548.023']}
         />
         <mesh
           name="palm_tree_01-Mesh023_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh023_1"].geometry}
-          material={materials["8BC34A.023"]}
+          geometry={nodes['palm_tree_01-Mesh023_1'].geometry}
+          material={materials['8BC34A.023']}
         />
         <mesh
           name="palm_tree_01-Mesh023_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh023_2"].geometry}
-          material={materials["DD9944.023"]}
+          geometry={nodes['palm_tree_01-Mesh023_2'].geometry}
+          material={materials['DD9944.023']}
         />
       </group>
       <group
@@ -874,22 +874,22 @@ export function World() {
           name="palm_tree_01-Mesh024"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh024"].geometry}
-          material={materials["795548.024"]}
+          geometry={nodes['palm_tree_01-Mesh024'].geometry}
+          material={materials['795548.024']}
         />
         <mesh
           name="palm_tree_01-Mesh024_1"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh024_1"].geometry}
-          material={materials["8BC34A.024"]}
+          geometry={nodes['palm_tree_01-Mesh024_1'].geometry}
+          material={materials['8BC34A.024']}
         />
         <mesh
           name="palm_tree_01-Mesh024_2"
           castShadow
           receiveShadow
-          geometry={nodes["palm_tree_01-Mesh024_2"].geometry}
-          material={materials["DD9944.024"]}
+          geometry={nodes['palm_tree_01-Mesh024_2'].geometry}
+          material={materials['DD9944.024']}
         />
       </group>
       <mesh
@@ -897,7 +897,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube001.geometry}
-        material={materials["Plant.001"]}
+        material={materials['Plant.001']}
         position={[0, -0.65, -28.24]}
       />
       <mesh
@@ -905,7 +905,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube002.geometry}
-        material={materials["Plant.002"]}
+        material={materials['Plant.002']}
         position={[-15.22, -0.65, -28.24]}
       />
       <mesh
@@ -913,7 +913,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube003.geometry}
-        material={materials["Plant.003"]}
+        material={materials['Plant.003']}
         position={[-0.29, -1.65, -60.55]}
       />
       <mesh
@@ -921,7 +921,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube004.geometry}
-        material={materials["Plant.004"]}
+        material={materials['Plant.004']}
         position={[-30.1, -1.65, -66.71]}
       />
       <mesh
@@ -929,7 +929,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube005.geometry}
-        material={materials["Plant.005"]}
+        material={materials['Plant.005']}
         position={[-30.1, -1.68, -52.99]}
       />
       <mesh
@@ -937,7 +937,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube006.geometry}
-        material={materials["Plant.006"]}
+        material={materials['Plant.006']}
         position={[-38.4, -1.41, 5.88]}
       />
       <mesh
@@ -945,7 +945,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube007.geometry}
-        material={materials["Plant.007"]}
+        material={materials['Plant.007']}
         position={[-68.35, -1.41, -25.71]}
       />
       <mesh
@@ -953,7 +953,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041.geometry}
-        material={materials["mat22.013"]}
+        material={materials['mat22.013']}
         position={[10.7, -0.46, -13.22]}
         scale={4}
       />
@@ -962,7 +962,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group337471551.geometry}
-        material={materials["mat22.013"]}
+        material={materials['mat22.013']}
         position={[66.66, -2.44, 6.74]}
         scale={15}
       />
@@ -971,7 +971,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041001.geometry}
-        material={materials["mat22.014"]}
+        material={materials['mat22.014']}
         position={[-25.93, -0.5, 13.49]}
         scale={4}
       />
@@ -980,7 +980,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041002.geometry}
-        material={materials["mat22.015"]}
+        material={materials['mat22.015']}
         position={[8.04, -1.32, 35.74]}
         scale={4}
       />
@@ -989,7 +989,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041003.geometry}
-        material={materials["mat22.016"]}
+        material={materials['mat22.016']}
         position={[8.04, -2.06, -56.88]}
         scale={4}
       />
@@ -998,7 +998,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041004.geometry}
-        material={materials["mat22.017"]}
+        material={materials['mat22.017']}
         position={[-24.05, -1.69, -56.88]}
         scale={4}
       />
@@ -1007,7 +1007,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041005.geometry}
-        material={materials["mat22.018"]}
+        material={materials['mat22.018']}
         position={[-46.22, -1.13, -32.02]}
         scale={4}
       />
@@ -1016,7 +1016,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041006.geometry}
-        material={materials["mat22.019"]}
+        material={materials['mat22.019']}
         position={[41.36, -1.69, -32.02]}
         scale={4}
       />
@@ -1031,21 +1031,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1004.geometry}
-          material={materials["lambert2SG.004"]}
+          material={materials['lambert2SG.004']}
         />
         <mesh
           name="SM_HutSM_Hut_1004_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1004_1.geometry}
-          material={materials["lambert4SG.004"]}
+          material={materials['lambert4SG.004']}
         />
         <mesh
           name="SM_HutSM_Hut_1004_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1004_2.geometry}
-          material={materials["lambert3SG.005"]}
+          material={materials['lambert3SG.005']}
         />
       </group>
       <group
@@ -1059,21 +1059,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1005.geometry}
-          material={materials["lambert2SG.005"]}
+          material={materials['lambert2SG.005']}
         />
         <mesh
           name="SM_HutSM_Hut_1005_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1005_1.geometry}
-          material={materials["lambert4SG.005"]}
+          material={materials['lambert4SG.005']}
         />
         <mesh
           name="SM_HutSM_Hut_1005_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1005_2.geometry}
-          material={materials["lambert3SG.006"]}
+          material={materials['lambert3SG.006']}
         />
       </group>
       <group
@@ -1086,21 +1086,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1006.geometry}
-          material={materials["lambert2SG.006"]}
+          material={materials['lambert2SG.006']}
         />
         <mesh
           name="SM_HutSM_Hut_1006_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1006_1.geometry}
-          material={materials["lambert4SG.006"]}
+          material={materials['lambert4SG.006']}
         />
         <mesh
           name="SM_HutSM_Hut_1006_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1006_2.geometry}
-          material={materials["lambert3SG.007"]}
+          material={materials['lambert3SG.007']}
         />
       </group>
       <group
@@ -1114,21 +1114,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1007.geometry}
-          material={materials["lambert2SG.007"]}
+          material={materials['lambert2SG.007']}
         />
         <mesh
           name="SM_HutSM_Hut_1007_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1007_1.geometry}
-          material={materials["lambert4SG.007"]}
+          material={materials['lambert4SG.007']}
         />
         <mesh
           name="SM_HutSM_Hut_1007_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1007_2.geometry}
-          material={materials["lambert3SG.008"]}
+          material={materials['lambert3SG.008']}
         />
       </group>
       <group
@@ -1142,21 +1142,21 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1008.geometry}
-          material={materials["lambert2SG.008"]}
+          material={materials['lambert2SG.008']}
         />
         <mesh
           name="SM_HutSM_Hut_1008_1"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1008_1.geometry}
-          material={materials["lambert4SG.008"]}
+          material={materials['lambert4SG.008']}
         />
         <mesh
           name="SM_HutSM_Hut_1008_2"
           castShadow
           receiveShadow
           geometry={nodes.SM_HutSM_Hut_1008_2.geometry}
-          material={materials["lambert3SG.009"]}
+          material={materials['lambert3SG.009']}
         />
       </group>
       <mesh
@@ -1164,7 +1164,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041007.geometry}
-        material={materials["mat22.020"]}
+        material={materials['mat22.020']}
         position={[0, -0.46, 13.49]}
         scale={4}
       />
@@ -1173,7 +1173,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.group1988159041008.geometry}
-        material={materials["mat22.021"]}
+        material={materials['mat22.021']}
         position={[12.81, -0.67, 13.49]}
         scale={4}
       />
@@ -1182,7 +1182,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube008.geometry}
-        material={materials["Plant.008"]}
+        material={materials['Plant.008']}
         position={[43.41, -2.62, 51.46]}
       />
       <mesh
@@ -1190,7 +1190,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Plant_Cube009.geometry}
-        material={materials["Plant.009"]}
+        material={materials['Plant.009']}
         position={[39.73, -1.64, -17.63]}
       />
       <mesh
@@ -1198,7 +1198,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Cube003_Cube002.geometry}
-        material={materials["Material.006"]}
+        material={materials['Material.006']}
         scale={[3.5, 1, 3.5]}
       />
       <mesh
@@ -1226,7 +1226,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Beach_Chair.geometry}
-        material={materials["lambert3SG.010"]}
+        material={materials['lambert3SG.010']}
         position={[54.86, 0.11, 18.5]}
         rotation={[0, 1.36, 0]}
         scale={0.01}
@@ -1236,7 +1236,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Beach_Chair001.geometry}
-        material={materials["lambert3SG.014"]}
+        material={materials['lambert3SG.014']}
         position={[54.86, 0.01, 26.49]}
         rotation={[1.02, 1.41, -1.02]}
         scale={0.01}
@@ -1246,7 +1246,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Beach_Chair002.geometry}
-        material={materials["lambert3SG.017"]}
+        material={materials['lambert3SG.017']}
         position={[-36.87, -0.61, -81.67]}
         rotation={[2.93, -0.83, 2.98]}
         scale={0.01}
@@ -1256,7 +1256,7 @@ export function World() {
         castShadow
         receiveShadow
         geometry={nodes.Beach_Chair003.geometry}
-        material={materials["lambert3SG.018"]}
+        material={materials['lambert3SG.018']}
         position={[-41.68, -0.5, -75.3]}
         rotation={[Math.PI, -0.72, Math.PI]}
         scale={0.01}
@@ -1272,7 +1272,7 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1.geometry}
-          material={materials["lambert3SG.010"]}
+          material={materials['lambert3SG.010']}
         />
         <mesh
           name="Beach_Umbrella_1_1"
@@ -1293,14 +1293,14 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1001.geometry}
-          material={materials["lambert3SG.011"]}
+          material={materials['lambert3SG.011']}
         />
         <mesh
           name="Beach_Umbrella_1001_1"
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1001_1.geometry}
-          material={materials["lambert5SG.001"]}
+          material={materials['lambert5SG.001']}
         />
       </group>
       <group
@@ -1314,14 +1314,14 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1002.geometry}
-          material={materials["lambert3SG.012"]}
+          material={materials['lambert3SG.012']}
         />
         <mesh
           name="Beach_Umbrella_1002_1"
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1002_1.geometry}
-          material={materials["lambert5SG.002"]}
+          material={materials['lambert5SG.002']}
         />
       </group>
       <group
@@ -1335,14 +1335,14 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1003.geometry}
-          material={materials["lambert3SG.013"]}
+          material={materials['lambert3SG.013']}
         />
         <mesh
           name="Beach_Umbrella_1003_1"
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1003_1.geometry}
-          material={materials["lambert5SG.003"]}
+          material={materials['lambert5SG.003']}
         />
       </group>
       <group
@@ -1356,14 +1356,14 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1004.geometry}
-          material={materials["lambert3SG.015"]}
+          material={materials['lambert3SG.015']}
         />
         <mesh
           name="Beach_Umbrella_1004_1"
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1004_1.geometry}
-          material={materials["lambert5SG.004"]}
+          material={materials['lambert5SG.004']}
         />
       </group>
       <group
@@ -1377,18 +1377,18 @@ export function World() {
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1005.geometry}
-          material={materials["lambert3SG.016"]}
+          material={materials['lambert3SG.016']}
         />
         <mesh
           name="Beach_Umbrella_1005_1"
           castShadow
           receiveShadow
           geometry={nodes.Beach_Umbrella_1005_1.geometry}
-          material={materials["lambert5SG.005"]}
+          material={materials['lambert5SG.005']}
         />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/world.glb");
+useGLTF.preload('/world.glb');

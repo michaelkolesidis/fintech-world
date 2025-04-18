@@ -1,5 +1,5 @@
-import { create } from "zustand";
-import { subscribeWithSelector } from "zustand/middleware";
+import { create } from 'zustand';
+import { subscribeWithSelector } from 'zustand/middleware';
 
 export default create(
   subscribeWithSelector((set) => {
@@ -121,7 +121,7 @@ export default create(
       /**
        * Phone Screen
        */
-      screen: "home",
+      screen: 'home',
       changeScreen: (value) => set({ screen: value }),
       /**
        * QR

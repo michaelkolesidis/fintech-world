@@ -1,6 +1,6 @@
-import { npcTexts } from "../../translations/en";
-import { useState, useEffect } from "react";
-import useGame from "../../stores/useGame.js";
+import { npcTexts } from '../../translations/en';
+import { useState, useEffect } from 'react';
+import useGame from '../../stores/useGame.js';
 
 export default function SpeechBubble() {
   const [textNumber, setTextNumber] = useState(0);
@@ -15,9 +15,9 @@ export default function SpeechBubble() {
         setTextNumber((prevNumber) => prevNumber + 1);
       }
     }
-    document.addEventListener("click", handleClick);
+    document.addEventListener('click', handleClick);
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener('click', handleClick);
     };
   }, []);
 

@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Howl } from "howler";
-import useGame from "../stores/useGame.js";
-import Phone from "./phone/Phone.jsx";
-import Instructions from "./instructions/Instructions.jsx";
-import ChatButton from "./actionButtons/ChatButton.jsx";
-import ScanButton from "./actionButtons/ScanButton.jsx";
+import { useEffect, useState } from 'react';
+import { Howl } from 'howler';
+import useGame from '../stores/useGame.js';
+import Phone from './phone/Phone.jsx';
+import Instructions from './instructions/Instructions.jsx';
+import ChatButton from './actionButtons/ChatButton.jsx';
+import ScanButton from './actionButtons/ScanButton.jsx';
 
 export default function Interface() {
   const sound = useGame((state) => state.sound);
@@ -32,7 +32,7 @@ export default function Interface() {
   const [soundtrack] = useState(
     () =>
       new Howl({
-        src: ["./sound/moonlight_beach.mp3"],
+        src: ['./sound/moonlight_beach.mp3'],
         loop: true,
         html5: true,
       })

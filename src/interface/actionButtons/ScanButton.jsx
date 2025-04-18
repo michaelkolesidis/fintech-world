@@ -1,5 +1,5 @@
-import scanQrIcon from "../phone/icons/scan_qr.png";
-import useGame from "../../stores/useGame.js";
+import scanQrIcon from '../phone/icons/scan_qr.png';
+import useGame from '../../stores/useGame.js';
 
 export default function ScanButton() {
   const scanQr = useGame((state) => state.scanQr);
@@ -9,7 +9,7 @@ export default function ScanButton() {
   const handleClick = () => {
     scanQr();
     togglePhone();
-    changeScreen("browser");
+    changeScreen('browser');
   };
 
   return (

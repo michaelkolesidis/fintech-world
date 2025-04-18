@@ -1,5 +1,5 @@
-import chatIcon from "./icons/chat.png";
-import useGame from "../../stores/useGame.js";
+import chatIcon from './icons/chat.png';
+import useGame from '../../stores/useGame.js';
 
 export default function ChatButton() {
   const isChatting = useGame((state) => state.isChatting);

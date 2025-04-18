@@ -1,19 +1,19 @@
 // import { Perf } from "r3f-perf";
-import { Environment, Text } from "@react-three/drei";
-import { Physics, RigidBody } from "@react-three/rapier";
-import { Character } from "./Character";
-import { Sea } from "./Sea";
-import { World } from "./World";
-import { Npc } from "./Npc";
-import { Arcade } from "./Arcade";
+import { Environment, Text } from '@react-three/drei';
+import { Physics, RigidBody } from '@react-three/rapier';
+import { Character } from './Character';
+import { Sea } from './Sea';
+import { World } from './World';
+import { Npc } from './Npc';
+import { Arcade } from './Arcade';
 
 export default function Experience() {
   return (
     <>
-      <color args={["#40dbf7"]} attach="background" />
+      <color args={['#40dbf7']} attach="background" />
       {/* <Perf position="bottom-left" /> */}
       <Environment preset="apartment" />
-      <Physics timeStep={"vary"} debug={false}>
+      <Physics timeStep={'vary'} debug={false}>
         <Character />
         <RigidBody
           colliders="trimesh"

@@ -1,4 +1,4 @@
-import secureIcon from "./icons/secure_icon.svg";
+import secureIcon from './icons/secure_icon.svg';
 
 export default function Browser() {
   return (

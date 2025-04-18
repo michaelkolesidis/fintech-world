@@ -1,16 +1,16 @@
-import React, { useEffect, useRef, useState } from "react";
-import { useFrame } from "@react-three/fiber";
+import React, { useEffect, useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
 import {
   Billboard,
   Html,
   Text,
   useGLTF,
   useAnimations,
-} from "@react-three/drei";
-import * as THREE from "three";
-import { RigidBody, CuboidCollider } from "@react-three/rapier";
-import useGame from "./stores/useGame.js";
-import SpeechBubble from "./interface/speechBubble/SpeechBubble.jsx";
+} from '@react-three/drei';
+import * as THREE from 'three';
+import { RigidBody, CuboidCollider } from '@react-three/rapier';
+import useGame from './stores/useGame.js';
+import SpeechBubble from './interface/speechBubble/SpeechBubble.jsx';
 
 export function Npc(props) {
   const isNearNpc = useGame((state) => state.isNearNpc);
@@ -30,11 +30,11 @@ export function Npc(props) {
   const npcPosition = new THREE.Vector3(...position);
 
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/npc.glb");
+  const { nodes, materials, animations } = useGLTF('/npc.glb');
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
-    materials["Material.001"].color = { ...color };
+    materials['Material.001'].color = { ...color };
   }, []);
 
   useFrame((state) => {
@@ -93,7 +93,7 @@ export function Npc(props) {
               <skinnedMesh
                 name="body"
                 geometry={nodes.body.geometry}
-                material={materials["Material.001"]}
+                material={materials['Material.001']}
                 skeleton={nodes.body.skeleton}
               />
               <skinnedMesh
@@ -122,4 +122,4 @@ export function Npc(props) {
   );
 }
 
-useGLTF.preload("/npc.glb");
+useGLTF.preload('/npc.glb');

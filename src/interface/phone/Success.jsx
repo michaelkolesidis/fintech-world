@@ -1,6 +1,6 @@
-import Browser from "./Browser";
-import Header from "./Header";
-import tickIcon from "./icons/tick.png";
+import Browser from './Browser';
+import Header from './Header';
+import tickIcon from './icons/tick.png';
 
 export default function Success() {
   return (

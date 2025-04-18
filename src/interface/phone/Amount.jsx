@@ -1,7 +1,7 @@
-import useGame from "../../stores/useGame.js";
-import Browser from "./Browser";
-import Header from "./Header";
-import coinIcon from "./icons/coin.png";
+import useGame from '../../stores/useGame.js';
+import Browser from './Browser';
+import Header from './Header';
+import coinIcon from './icons/coin.png';
 
 export default function Amount() {
   const changeScreen = useGame((state) => state.changeScreen);
@@ -17,7 +17,7 @@ export default function Amount() {
         </div>
         <div className="form-text">Mobile Number</div>
         <div className="form-field">0123456789</div>
-        <div className="form-button" onClick={() => changeScreen("payment")}>
+        <div className="form-button" onClick={() => changeScreen('payment')}>
           Continue
         </div>
       </div>

@@ -1,9 +1,9 @@
-import * as THREE from "three";
-import { CuboidCollider, RigidBody } from "@react-three/rapier";
-import { useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import seaVertexShader from "./shaders/vertex.glsl";
-import seaFragmentShader from "./shaders/fragment.glsl";
+import * as THREE from 'three';
+import { CuboidCollider, RigidBody } from '@react-three/rapier';
+import { useFrame } from '@react-three/fiber';
+import { useRef } from 'react';
+// import seaVertexShader from './shaders/vertex.glsl';
+// import seaFragmentShader from './shaders/fragment.glsl';
 
 THREE.ColorManagement.enabled = true;
 
@@ -18,7 +18,7 @@ const boxGeometry = new THREE.BoxGeometry(
   seaDimensions.length / 2
 );
 
-const seaMaterial = new THREE.MeshStandardMaterial({ color: "#23EDD7" });
+const seaMaterial = new THREE.MeshStandardMaterial({ color: '#23EDD7' });
 
 export function SeaLevel({ position = [0, 0, 0] }) {
   const seaLevel = useRef();

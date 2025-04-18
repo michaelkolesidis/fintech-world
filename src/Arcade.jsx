@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
-import { RigidBody, CuboidCollider } from "@react-three/rapier";
-import * as THREE from "three";
-import useGame from "./stores/useGame.js";
+import React from 'react';
+import { useFrame } from '@react-three/fiber';
+import { useGLTF } from '@react-three/drei';
+import { RigidBody, CuboidCollider } from '@react-three/rapier';
+import * as THREE from 'three';
+import useGame from './stores/useGame.js';
 
 export function Arcade(props) {
   const isNearArcade = useGame((state) => state.isNearArcade);
@@ -20,9 +20,9 @@ export function Arcade(props) {
   // Arcade character position
   const arcadePosition = new THREE.Vector3(...position);
 
-  const { nodes, materials } = useGLTF("/arcade.glb");
+  const { nodes, materials } = useGLTF('/arcade.glb');
 
-  useFrame((state) => {
+  useFrame(() => {
     playerPosition = new THREE.Vector3(positionX, positionY, positionZ);
     if (playerPosition.distanceTo(arcadePosition) < 2.75) {
       if (!isNearArcade) {
@@ -95,4 +95,4 @@ export function Arcade(props) {
   );
 }
 
-useGLTF.preload("/arcade.glb");
+useGLTF.preload('/arcade.glb');
