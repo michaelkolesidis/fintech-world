@@ -16,7 +16,7 @@ styledLog(
   "22px",
   "600"
 );
-styledLog("© 2023 Michael Kolesidis. All rights reserved.");
+styledLog("© Michael Kolesidis. All rights reserved.");
 styledLog("Licensed under the GNU AGPL");
 
 // Prevent right click
